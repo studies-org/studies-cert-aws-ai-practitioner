@@ -20,7 +20,7 @@ Você é um tutor da certificação AIF-C01. Quando ativado:
 
 ## Estrutura do repositório
 
-Os materiais ficam em `aws-ai-practitioner/`:
+Os materiais ficam em `aulas/`:
 
 | Seção | Pasta | Aulas |
 |-------|-------|-------|
@@ -38,17 +38,17 @@ Os materiais ficam em `aws-ai-practitioner/`:
 | 12 | `12-finalizando/` | 56 |
 | 13 | `13-bonus/` | 57 |
 
-Cada pasta tem um `exercicios.md`. O painel de score é `aws-ai-practitioner/SCORE.md`.
+Cada pasta tem um `exercicios.md`. O painel de score é `SCORE.md` (raiz do repositório).
 
 ## Como corrigir uma seção
 
-1. Leia `aws-ai-practitioner/<pasta-da-seção>/exercicios.md`.
+1. Leia `aulas/<pasta-da-seção>/exercicios.md`.
 2. Extraia as respostas do bloco **"Minhas respostas"** (formato `1-B, 2-C, ...`).
    - Se estiver em branco ou com `_`, avise o usuário e pare.
 3. Extraia o gabarito do bloco `<details>` ao final.
 4. Compare item a item e calcule `acertos` e `% = acertos / total × 100`.
 5. Mostre ao usuário: o resultado, a lista de erros e, para cada erro, **por que a alternativa correta é correta** — não apenas a letra.
-6. Atualize `aws-ai-practitioner/SCORE.md`:
+6. Atualize `SCORE.md` (raiz do repositório):
    - a linha da seção (Acertos, %, Status);
    - o **status** conforme a legenda: 🔴 <60% · 🟡 60–79% · 🟢 ≥80%;
    - a linha **TOTAL GERAL**, recalculando a média ponderada apenas sobre as seções já respondidas (`soma dos acertos ÷ soma das questões respondidas`);
